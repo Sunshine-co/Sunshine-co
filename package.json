@@ -1,0 +1,24 @@
+{
+  "name": "caprichosas_makeup",
+  "version": "1.0.0",
+  "description": "Tienda virtual de productos de belleza",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Samy2753/Caprichosas_MakeUp.git"
+  },
+  "author": "Samy Andrea Restrepo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Samy2753/Caprichosas_MakeUp/issues"
+  },
+  "homepage": "https://github.com/Samy2753/Caprichosas_MakeUp#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.6.5"
+  }
+}
