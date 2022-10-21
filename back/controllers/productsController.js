@@ -25,7 +25,8 @@ exports.getProductById= async (req, res, next)=>{
     if (!product){
             return res.status(404).json({
             success:false,
-            message: 'No encontramos ese producto'
+            message: 'No encontramos ese producto',
+            error:true
         })
     }
     res.status(200).json({
@@ -105,4 +106,4 @@ function verProductoPorID(id){
     .catch(err=>console.error(err))
 }
 
-//verProductoPorID('6346b9a43fcfd5efd3d9b502'); Probamos el metodo con un id
+//verProductoPorID('63456a8d9163cb9dbbcaa235'); Probamos el metodo con un id
