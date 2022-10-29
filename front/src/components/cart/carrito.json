@@ -1,0 +1,36 @@
+{
+    "item": [
+        {
+            "_id": "6355a6f8c861aff839a74090",
+            "producto": "Queso blando",
+            "precio": 15000,
+            "imagen": "./images/productos/queso_blando.png",
+            "inventario": 29,
+            "__v": 0
+        },
+        {
+            "_id": "6355a826c861aff839a740ba",
+            "nombre": "Queso Crema",
+            "precio": 17000,
+            "imagen": "./images/productos/queso_crema.png",
+            "inventario": 35,
+            "__v": 0
+        },
+        {
+            "_id": "6355ac3eecd83b3fd481da7d",
+            "nombre": "Leche Alpina",
+            "precio": 18000,
+            "imagen":  "./images/productos/leche_alpina.png",
+            "inventario": 38,
+            "__v": 0
+        },
+        {
+            "_id": "6355ace2ecd83b3fd481da88",
+            "nombre": "Yogurt Finesse",
+            "precio": 13000,
+            "imagen":"./images/productos/Yogurt_Mora_Finesse.png",
+            "inventario": 38,
+            "__v": 0
+        }
+    ]
+}

@@ -20,19 +20,19 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: rgba(66, 66, 66, 0.2);
+  background-color: rgba(199, 165, 210, 0.695);
   border: 0px;
   background-clip: padding-box;
   border-radius: 5px;
 }
 
 nav {
-  background-color: #232f3e;
+  background-color: #8c568d;
   padding: 1rem 1rem;
 }
 
 #search_btn {
-  background-color: #febd69;
+  background-color: #4eaaae;
 }
 
 .input-group {
@@ -47,7 +47,7 @@ f
 
 #login_btn,
 #view_btn {
-  background-color: #febd69;
+  background-color: #69d1fe;
   padding: 0.4rem 1.8rem;
   font-family: calibri;
 }
@@ -58,7 +58,7 @@ f
 }
 
 #cart_count {
-  background-color: #febd69;
+  background-color: #69eafe;
   padding: 0.2rem 0.5rem;
   border-radius: 0.2rem;
   color: black;
@@ -80,7 +80,7 @@ f
 }
 
 .card-title a:hover {
-  color: #fa9c23;
+  color: #23cffa;
   text-decoration: none;
 }
 
@@ -93,8 +93,8 @@ f
 }
 
 #view_btn {
-  background-color: #fa9c23;
-  color: white;
+  background-color: #69d1fe;
+  color: rgb(24, 18, 18);
 }
 
 .card-img-top {
@@ -240,7 +240,7 @@ footer {
 }
 
 #card_item_price {
-  color: #febd69;
+  color: #69b8fe;
   font-weight: bold;
   font-size: 1.4rem;
 }

@@ -1,5 +1,5 @@
 {
-  "name": "caprichosas_makeup",
+  "name": "Sunshine-co",
   "version": "1.0.0",
   "description": "Tienda virtual de productos de belleza",
   "main": "server.js",
@@ -10,19 +10,25 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Samy2753/Caprichosas_MakeUp.git"
+    "url": "git+https://github.com/Samy2753/Sunshine-co.git"
   },
   "author": "Samy Andrea Restrepo",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Samy2753/Caprichosas_MakeUp/issues"
+    "url": "https://github.com/Samy2753/Sunshine-co/issues"
   },
-  "homepage": "https://github.com/Samy2753/Caprichosas_MakeUp#readme",
+  "homepage": "https://github.com/Samy2753/Sunshine-co#readme",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.1",
+    "cookie-parser": "^1.4.6",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
+    "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.6.5",
-    "node-fetch": "^3.2.10"
+    "node-fetch": "^3.2.10",
+    "nodemailer": "^6.8.0",
+    "validator": "^13.7.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.20"

@@ -15,8 +15,7 @@ export const Home = () => {
             return alert.error(error)
         }
 
-        dispatch(getProducts());
-        alert.success("OK")
+        dispatch(getProducts());       
     }, [dispatch])
 
 
@@ -24,7 +23,7 @@ export const Home = () => {
         <Fragment>
             {loading ? <i class="fa fa-refresh fa-spin fa-3x fa-fw"></i> :(
                 <Fragment>
-                    <MetaData title="Lo mejor para tu belleza"></MetaData>
+                    <MetaData title="Lo mejor para tu hogar"></MetaData>
             <h1 id="encabezado_productos">Ultimos Productos</h1>
 
             <section id="productos" className='container mt-5'>

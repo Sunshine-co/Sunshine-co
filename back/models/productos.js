@@ -38,16 +38,11 @@ const productosSchema=mongoose.Schema({
         required:[true,"Por favor seleccione la categoria del producto."],
         enum:{
             values:[
-                "Sombras",
-                "Pestañinas",
-                "Delineadores",
-                "Brochas",
-                "Mascarillas",
-                "Hidratantes",
-                "Labiales",
-                "Exfoliantes",
-                "Serum"
-            ]
+                "Lacteos",
+                "Carnicos",
+                "Snack",
+                "Aseo",
+                            ]
         }
     },
     vendedor:{
