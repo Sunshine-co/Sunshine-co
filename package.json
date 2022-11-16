@@ -34,6 +34,7 @@
     "nodemailer": "^6.8.0",
     "parser": "^0.1.4",
     "rc-slider": "^10.1.0",
+    "react-native-uuid": "^2.0.1",
     "validator": "^13.7.0"
   },
   "devDependencies": {
