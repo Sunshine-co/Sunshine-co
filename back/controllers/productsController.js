@@ -3,11 +3,12 @@ const producto = require("../models/productos");
 const APIFeatures = require("../utils/apiFeatures");
 const ErrorHandler = require("../utils/errorHandler");
 const fetch = (url) => import('node-fetch').then(({ default: fetch }) => fetch(url)); //Usurpación del require
+const cloudinary=require("cloudinary")
 
 //Ver la lista de productos
 exports.getProducts = catchAsyncErrors(async (req, res, next) => {
 
-    const resPerPage = 4;
+    const resPerPage = 8;
     const productsCount = await producto.countDocuments();
 
     const apiFeatures = new APIFeatures(producto.find(), req.query)
@@ -82,6 +83,26 @@ exports.deleteProduct = catchAsyncErrors(async (req, res, next) => {
 
 //Crear nuevo producto /api/productos
 exports.newProduct = catchAsyncErrors(async (req, res, next) => {
+    let imagen=[]
+    if(typeof req.body.imagen==="string"){
+        imagen.push(req.body.imagen)
+    }else{
+        imagen=req.body.imagen
+    }
+
+    let imagenLink=[]
+
+    for (let i=0; i<imagen.length;i++){
+        const result = await cloudinary.v2.uploader.upload(imagen[i],{
+            folder:"products"
+        })
+        imagenLink.push({
+            public_id:result.public_id,
+            url: result.secure_url
+        })
+    }
+
+    req.body.imagen=imagenLink
     req.body.user = req.user.id;
     const product = await producto.create(req.body);
     res.status(201).json({
@@ -168,6 +189,17 @@ exports.deleteReview = catchAsyncErrors(async (req, res, next) => {
 
 })
 
+//Ver la lista de productos (Admin)
+exports.getAdminProducts = catchAsyncErrors(async (req, res, next) => {
+
+    const products = await producto.find()
+
+    res.status(200).json({
+        products
+    })
+
+})
+
 //HABLEMOS DE FETCH
 //Ver todos los productos
 function verProductos() {
@@ -187,5 +219,4 @@ function verProductoPorID(id) {
         .catch(err => console.error(err))
 }
 
-//verProductoPorID('63456a8d9163cb9dbbcaa235'); Probamos el metodo con un id
 //verProductoPorID('63456a8d9163cb9dbbcaa235'); Probamos el metodo con un id
