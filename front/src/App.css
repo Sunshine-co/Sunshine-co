@@ -76,7 +76,7 @@ f
 }
 
 .card-title a {
-  color: #2e2e2e;
+  color: #7c076b;
 }
 
 .card-title a:hover {
@@ -94,7 +94,7 @@ f
 
 #view_btn {
   background-color: #e5c825;
-  color: rgb(24, 18, 18);
+  color: #7c076b;
 }
 
 .card-img-top {
@@ -109,14 +109,14 @@ f
 
 #no_of_reviews {
   font-size: 0.85rem;
-  color: grey;
+  color: g#7c076b;
   margin-left: 0.5rem;
 }
 
 /* Footer */
 footer {
   margin-top: 8rem;
-  color: grey;
+  color: #7c076b;
   bottom: 0;
   width: 100%;
 }
