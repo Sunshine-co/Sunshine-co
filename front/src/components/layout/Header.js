@@ -23,7 +23,7 @@ const Header = () => {
             <nav className='navbar row'>
                 <div className='col-12 col-md-3'>
                     <div className='navbar-brand'>
-                        <Link to="/" ><img src="../images/sunshine.png" alt="sunshine-co Store Logo"></img></Link>
+                        <Link to="/" ><img src="../images/sunshine.png" alt="sunshineShop Store Logo"></img></Link>
                     </div>
                 </div>
 
@@ -51,7 +51,7 @@ const Header = () => {
                             <div className='dropdown-menu' aria-labelledby='dropDownMenu'>
                                 {/*Preguntamos el rol de quien esta online*/}
                                 {user && user.role === "admin" && (
-                                    <Link className="dropdown-item" to="/dashboard">Adm. Productos</Link>
+                                    <Link className="dropdown-item" to="/dashboard">Dashboard</Link>
                                 )}
 
                                 <Link className="dropdown-item" to="/myOrders">Pedidos</Link>

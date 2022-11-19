@@ -25,7 +25,6 @@ const NewProduct = () => {
         "Carnicos",
         "Snack",
         "Aseo",
-                   
     ]
 
     const alert = useAlert();

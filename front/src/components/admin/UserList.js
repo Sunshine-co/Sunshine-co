@@ -32,7 +32,7 @@ const UsersList = () => {
             dispatch({ type: DELETE_USER_RESET })
         }
 
-    }, [dispatch, alert, error, isDeleted,navigate])
+    }, [dispatch, alert, error, isDeleted])
 
     const deleteUserHandler = (id) => {
         dispatch(deleteUser(id))
