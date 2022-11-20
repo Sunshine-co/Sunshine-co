@@ -20,19 +20,19 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: rgba(199, 165, 210, 0.695);
+  background-color: rgba(165, 201, 210, 0.695);
   border: 0px;
   background-clip: padding-box;
   border-radius: 5px;
 }
 
 nav {
-  background-color: #8c568d;
+  background-color: #7c076b;
   padding: 1rem 1rem;
 }
 
 #search_btn {
-  background-color: #4eaaae;
+  background-color: #e5c825;
 }
 
 .input-group {
@@ -47,7 +47,7 @@ f
 
 #login_btn,
 #view_btn {
-  background-color: #69d1fe;
+  background-color: #e5c825;
   padding: 0.4rem 1.8rem;
   font-family: calibri;
 }
@@ -58,7 +58,7 @@ f
 }
 
 #cart_count {
-  background-color: #69eafe;
+  background-color: #e5c825;
   padding: 0.2rem 0.5rem;
   border-radius: 0.2rem;
   color: black;
@@ -76,11 +76,11 @@ f
 }
 
 .card-title a {
-  color: #2e2e2e;
+  color: #7c076b;
 }
 
 .card-title a:hover {
-  color: #23cffa;
+  color: #e5c825;
   text-decoration: none;
 }
 
@@ -93,8 +93,8 @@ f
 }
 
 #view_btn {
-  background-color: #69d1fe;
-  color: rgb(24, 18, 18);
+  background-color: #e5c825;
+  color: #7c076b;
 }
 
 .card-img-top {
@@ -109,14 +109,14 @@ f
 
 #no_of_reviews {
   font-size: 0.85rem;
-  color: grey;
+  color: g#7c076b;
   margin-left: 0.5rem;
 }
 
 /* Footer */
 footer {
   margin-top: 8rem;
-  color: grey;
+  color: #7c076b;
   bottom: 0;
   width: 100%;
 }

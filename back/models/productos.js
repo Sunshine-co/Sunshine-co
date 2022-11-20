@@ -38,10 +38,12 @@ const productosSchema=mongoose.Schema({
         required:[true,"Por favor seleccione la categoria del producto."],
         enum:{
             values:[
+                
                 "Lacteos",
                 "Carnicos",
                 "Snack",
                 "Aseo",
+                "Bebidas",
                             ]
         }
     },
@@ -75,6 +77,13 @@ const productosSchema=mongoose.Schema({
             }
         }
     ],
+
+    user:{
+        type: mongoose.Schema.ObjectId,
+        ref: 'User',
+        required: true
+    },
+    
     fechaCreacion:{
         type:Date,
         default:Date.now
