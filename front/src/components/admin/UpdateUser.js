@@ -50,7 +50,7 @@ const UpdateUser = () => {
             })
         }
 
-    }, [dispatch, alert, error, isUpdated, userId, user,navigate])
+    }, [dispatch, alert, error, isUpdated, userId, user])
 
     const submitHandler = (e) => {
         e.preventDefault();

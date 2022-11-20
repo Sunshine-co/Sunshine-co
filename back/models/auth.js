@@ -81,3 +81,4 @@ usuarioSchema.methods.genResetPasswordToken = function () {
 
 
 module.exports = mongoose.model("auth", usuarioSchema)
+

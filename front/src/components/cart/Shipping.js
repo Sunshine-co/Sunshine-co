@@ -8,27 +8,27 @@ import CheckoutSteps from './CheckOutSteps';
 
 export const Shipping = () => {
     let Pais = require('./colombia.json');
-    const navigate = useNavigate()
+    const navigate= useNavigate()
     const { shippingInfo } = useSelector(state => state.cart)
 
     const [direccion, setDireccion] = useState(shippingInfo.direccion)
     const [ciudad, setCiudad] = useState(shippingInfo.ciudad)
     const [telefono, setTelefono] = useState(shippingInfo.telefono)
     const [departamento, setDepartamento] = useState(shippingInfo.departamento)
-    const [ciudades, setCiudades] = useState([])
+    const [ciudades, setCiudades]= useState([])
 
-    useEffect(() => {
-        Pais.forEach((depar) => {
-            if (depar.departamento === departamento) {
-                setCiudades(depar.ciudades)
-            }
-        })
+    useEffect(()=>{
+      Pais.forEach((depar)=>{
+        if (depar.departamento===departamento){
+            setCiudades(depar.ciudades)
+        }
+      })
     })
-    const dispatch = useDispatch();
+    const dispatch= useDispatch();
 
-    const submitHandler = (e) => {
+    const submitHandler= (e)=>{
         e.preventDefault()
-        dispatch(saveShippingInfo({ direccion, ciudad, telefono, departamento }))
+        dispatch(saveShippingInfo({direccion, ciudad, telefono, departamento}))
         navigate("/order/confirm")
     }
 
@@ -41,7 +41,7 @@ export const Shipping = () => {
             <CheckoutSteps shipping />
             <div className="row wrapper">
                 <div className="col-10 col-lg-5">
-                    <form className="shadow-lg">
+                    <form className="shadow-lg" onSubmit={submitHandler}>
                         <h1 className="mb-4">Información de envio</h1>
                         <div className="form-group">
                             <label htmlFor="address_field">Dirección</label>
@@ -100,7 +100,7 @@ export const Shipping = () => {
                                             {ciudad}
                                         </option>
                                     ))}
-
+                                   
 
                                 </select>
                             </div>
@@ -109,7 +109,7 @@ export const Shipping = () => {
                         <button
                             id="shipping_btn"
                             type="submit"
-                            className="btn btn-block py-3"onClick={submitHandler}   
+                            className="btn btn-block py-3"
                         >
                             CONTINUAR
                         </button>

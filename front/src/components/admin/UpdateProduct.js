@@ -22,10 +22,12 @@ export const UpdateProduct = () => {
     const [oldImagen, setOldImagen] = useState([])
 
     const categorias = [
+        
         "Lacteos",
         "Carnicos",
         "Snack",
         "Aseo",
+        "Bebidas",
                    
     ]
 
