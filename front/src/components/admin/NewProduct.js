@@ -21,7 +21,7 @@ const NewProduct = () => {
     const [imagenPreview, setImagenPreview] = useState([])
 
     const categorias = [
-       ,"",
+       "",
        "Lacteos",
        "Carnicos",
        "Snack",
