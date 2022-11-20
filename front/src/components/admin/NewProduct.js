@@ -21,10 +21,12 @@ const NewProduct = () => {
     const [imagenPreview, setImagenPreview] = useState([])
 
     const categorias = [
-        "Lacteos",
-        "Carnicos",
-        "Snack",
-        "Aseo",
+       ,"",
+       "Lacteos",
+       "Carnicos",
+       "Snack",
+       "Aseo",
+       "Bebidas"
     ]
 
     const alert = useAlert();
